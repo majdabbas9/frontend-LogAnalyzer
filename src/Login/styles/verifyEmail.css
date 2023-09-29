@@ -1,0 +1,35 @@
+.verify-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.verify-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.verify-container p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.resend-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resend-button:hover {
+    background-color: #2980b9;
+}
