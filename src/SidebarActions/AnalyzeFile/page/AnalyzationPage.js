@@ -9,7 +9,7 @@ import {useAuthUser} from "react-auth-kit";
 export default function AnalyzationPage(props) {
     const location = useLocation();
     const rules = location.state.data || {}; // Access the 'data' passed from the first page
-  
+        debugger
     // console.log("Analyzation page ");
     // console.log(rules);
     const rulesRanks = rules.map(rule => {
