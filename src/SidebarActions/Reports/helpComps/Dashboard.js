@@ -109,7 +109,7 @@ function Dashboard() {
     const getFilenames = async () => {
 
         try {
-            const response = await fetch("http://localhost:5000/report/", {
+            const response = await fetch("http://localhost:5000/admin/report/", {
               method: "GET",
               headers: {
                 "Content-Type": "application/json",
@@ -141,7 +141,7 @@ function Dashboard() {
     const [first, setFirst] = useState(false);
     const getRulesAndDates = async () => {
         try {
-            const response = await fetch("http://localhost:5000/report/" + fileObj.file_name, {
+            const response = await fetch("http://localhost:5000/admin/report/" + fileObj.file_name, {
               method: "GET",
               headers: {
                 "Content-Type": "application/json",
@@ -307,7 +307,7 @@ function Dashboard() {
 const authHeader = useAuthHeader()
     const postHandlingData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/report/getData", {
+            const response = await fetch("http://localhost:5000/admin/report/getData", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json',
                 Authorization: authHeader(),},
