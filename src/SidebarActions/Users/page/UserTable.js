@@ -18,7 +18,7 @@ const UserTable = () => {
   }, []);
   async function fetchData() {
     try {
-      const response = await fetch("http://localhost:5000/admin/get", {
+      const response = await fetch("http://localhost:5000/admin/dashboard", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -107,11 +107,11 @@ const UserTable = () => {
               {records.length &&
                 records.map((d, i) => (
                   <tr className="rowbody" key={i}>
-                    <td>{d.userName}</td>
+                    <td>{d.username}</td>
                     <td>{d.firstName}</td>
                     <td>{d.lastName}</td>
                     <td>{d.email}</td>
-                    <td>{d.phone}</td>
+                    <td>{d.phoneNumber}</td>
                     <td>{d.role}</td>
                     <td>
                       <i
